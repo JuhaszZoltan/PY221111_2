@@ -51,3 +51,10 @@ if i < len(szamok): print('VAN 3-al osztható szám')
 else: print('NINCS 3-al osztható szám')
 
 # inputként bekért szám indexe
+keresett_szam = int(input('keresett szám: '))
+i = 0
+while i < len(szamok) and szamok[i] != keresett_szam:
+    i += 1
+if i < len(szamok):
+    print(f'a {keresett_szam} idexe: {i}')
+else: print(f'a {keresett_szam} nincs a listában!')
